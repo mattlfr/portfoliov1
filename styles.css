@@ -1,0 +1,337 @@
+body {
+    font-family: sans-serif;
+}
+
+.content {
+    background-color: white;
+    margin: auto;
+    max-width: 600px;
+    margin-top: 30px;
+
+}
+
+@media (max-width: 500px) {
+    .content {
+        max-width: 95%;
+    }
+}
+
+.buildingblockscontainer {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.buildingblocks {
+    background-color: black;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    font-weight: 70px;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+
+.buildingblocks:hover {
+    background-color: #414243;
+}
+
+.header_content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_flexitem h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.header_flexitem h4 {
+    margin-top: 0;
+    color: black;
+    font-weight: 400;
+}
+
+.header_flexitem img {
+    width: 100px;
+    border-radius: 100px;
+}
+
+@media (max-width: 500px) {
+    .header_flexitem h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    
+    .header_flexitem h4 {
+        margin-top: 0;
+        color: #8D8D8D;
+        font-weight: 400;
+    }
+
+    .header_content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_flexitem img {
+        width: 100px;
+        border-radius: 100px;
+    }
+}
+
+.paragraphcontent p {
+    font-weight: 400;
+    color: #8D8D8D;
+}
+
+
+/* Work Experience Styling */
+
+.workexperience_subcontainer {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between Job Title + Subtitle and Date Range */
+    flex-wrap: wrap; /* Allows wrapping onto the next row */
+    gap: 10px;
+}
+
+.workexperience_logo {
+    flex-shrink: 0; /* Prevent logo from shrinking */
+    width: 50px; /* Fixed size for the circular frame */
+    height: 50px;
+    border-radius: 50%; /* Make the frame circular */
+    border: 0.2px solid rgb(178, 178, 178);
+    overflow: hidden; /* Clip the image to the circular frame */
+    display: flex; /* Center the image inside */
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; /* Add space between logo and content */
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.workexperience_logo img {
+    width: 100%; /* Scale image to fit the circular frame */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.workexperience_content {
+    display: flex; /* Flexbox for inner layout */
+    align-items: center; /* Vertically align date range with content */
+    flex: 1; /* Let content expand to fill available space */
+    justify-content: space-between; /* Ensure spacing between text and date range */
+}
+
+.workexperience_text {
+    display: flex; /* Nested flexbox for title and subtitle */
+    flex-direction: column; /* Stack Job Title and Subtitle vertically */
+}
+
+.workexperience_job-title {
+    font-weight: bold; /* Make Job Title prominent */
+    font-size: 14px; /* Adjust size as needed */
+}
+
+.workexperience_subtitle {
+    font-size: 12px; /* Slightly smaller for subtitle */
+    color: #636363;
+    margin-top: 2px; /* Optional spacing between title and subtitle */
+}
+
+.workexperience_date-range {
+    text-align: right; /* Align Date Range to the right */
+    font-size: 12px; /* Adjust font size as needed */
+}
+
+.workexperience_description {
+    flex: 1 1 100%; /* Force description to take up the full width of its row */
+    margin-bottom: 20px;
+    padding-left: calc(62px + 10px); /* Align with the left edge of the Job Title */
+    margin-right: 10px;
+    color: #636363;
+    font-size: 12px;
+}
+
+  
+
+/* Portfolio Section */
+
+.sectionheader {
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#sectionheaderbox {
+    background-color: black;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    margin-bottom: 0px;
+    font-weight: 51px;
+    font-size: 16px;
+}
+
+#h1minpadding {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.subtitletext {
+    color: #8D8D8D;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    
+}
+
+.portfolioitemscontainer {
+    display: flex;
+    flex-direction: row; /* Flex items in a row */
+    flex-wrap: wrap; /* Allows items to wrap */
+    gap: 10px; /* Space between items */
+    margin-top: 30px;
+    max-width: 100%; /* Ensures container doesn’t exceed its parent */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    overflow: hidden; /* Prevents extra content from affecting layout */
+}
+
+.portfolioitem {
+    border-radius: 8px;
+    border: 0.5px solid rgb(178, 178, 178);
+    width: calc(45% - 10px); /* Account for gap */
+    min-width: 250px; /* Ensures wrapping happens properly */
+    background-color: white;
+    font-size: 12px;
+    color: #8D8D8D;
+    overflow: hidden;
+    flex: 0 1 auto; /* Prevents shrinking but allows wrapping */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 500px) { /* Adjust breakpoint as needed */
+    .portfolioitem {
+        width: 90vw; /* 90% of the viewport width */
+        min-width: unset; /* Remove the min-width to prevent conflicts */
+    }
+
+    .portfolioitemscontainer {
+        width: 100%; /* Ensures container takes full viewport width */
+    }
+}
+
+
+.portfoliosubitem {
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.portfolioitem:hover {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.5s;
+}
+
+.projectwebsiteblock {
+    background-color: black;
+    color: white;
+    margin-top: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    font-weight: 70px;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    display: inline-block;
+}
+
+.buildingblocks-portfolio {
+    background-color: rgb(227, 227, 227);
+    color: rgb(0, 0, 0);
+    padding-top: 1.2px;
+    padding-bottom: 1.2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    font-weight: 90px;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+}
+
+.buildingblockscontainer-portfolio {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.portfolioitem-h4 {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.portfolioitem-date {
+    color: black;
+    font-weight: lighter;
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.portfolioitem-bodytext {
+    color: #8D8D8D;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+a {
+    color: black;
+}
+
+.portfoliothumbnail {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures excess image is hidden */
+}
+
+.portfoliothumbnail img {
+    width: 100%; /* Maintains aspect ratio */
+    height: auto; /* Ensures the image height fits the container */
+    aspect-ratio: 16 / 9;
+    object-fit: cover; /* Properly crops and centers the image */
+}
+
+/* Milestones */
